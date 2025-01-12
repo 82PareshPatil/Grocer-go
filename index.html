@@ -1,0 +1,468 @@
+<!--Create A Responsive Grocery Store Website Design Using HTML - CSS - JavaScript -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocer go</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!--Font awesome cdn link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <!--custom css file link-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Header section Starts-->
+    <header class="header">
+      <a href="logo.png" class="logo"><i class="fas fa-shopping-basket"></i>Grocer go</a>
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#features">features</a>
+        <a href="#products">products</a>
+        <a href="#categories">categories</a>
+        <a href="#review">review</a>
+        <a href="#blogs">blogs</a>
+      </nav>
+
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
+
+      <form action="" class="search-form">
+        <input type="search" id="serach-box" placeholder="search here..." />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <div class="shopping-cart">
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="cart-img-1.png" alt="" />
+          <div class="content">
+            <h3>Watermelon</h3>
+            <span class="price">&#8377;499/-</span>
+            <span class="quantity">qty:1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="cart-img-2.png" alt="" />
+          <div class="content">
+            <h3>Onion</h3>
+            <span class="price">&#8377;499/-</span>
+            <span class="quantity">qty:1</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-trash"></i>
+          <img src="cart-img-3.png" alt="" />
+          <div class="content">
+            <h3>Chicken</h3>
+            <span class="price">&#8377;499/-</span>
+            <span class="quantity">qty:1</span>
+          </div>
+        </div>
+        <div class="total">total:&#8377;1497/-</div>
+        <a href="#" class="btn">checkout</a>
+      </div>
+
+      <form action="" class="login-form">
+        <h3><a href="login.html" style="
+    color: brown;" target="_blank">login now</a></h3>
+      </form>
+    </header>
+
+    <!--Header section Ends-->
+
+    <!-- home section starts-->
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Fresh and <span>Organic</span> products for your</h3>
+        <p>
+          "Grocer Go" bridges the gap in grocery delivery services for rural areas and hostel residents, where platforms like Zepto and Blinkit are unavailable. We provide a convenient, fast, and reliable solution to ensure access to daily essentials for underserved communities.
+        </p>
+        <a href="#" class="btn">shop now</a>
+      </div>
+    </section>
+    <!-- home section Ends-->
+
+    <!-- features section starts-->
+    <section class="features" id="features">
+      <h1 class="heading">our <span> features</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="feature-img-1.png" alt="" />
+          <h3>fresh and organic</h3>
+          <p>
+            "Grocer Go brings fresh, organic groceries to rural areas and hostels, ensuring health and convenience where major delivery platforms don’t reach."          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+          <img src="feature-img-2.png" alt="" />
+          <h3>free delivery</h3>
+          <p>
+            "Grocer Go offers fresh, organic groceries with free delivery, bringing health and convenience to rural areas and hostels where other platforms don’t reach."          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+          <img src="feature-img-3.png" alt="" />
+          <h3>easy payments</h3>
+          <p>
+            "Grocer Go delivers fresh, organic groceries with free delivery and easy payment options, making life simpler for rural and hostel communities."          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- features section Ends-->
+
+    <!-- products section Starts-->
+    <section class="products" id="products">
+      <h1 class="heading">our <span> products</span></h1>
+      <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="product-1.png" alt="" />
+            <h3>fresh orange</h3>
+            <div class="price">&#8377;499/- - 1099/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="product-2.png" alt="" />
+            <h3>fresh Onion</h3>
+            <div class="price">&#8377;499/- -- 999/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="product-3.png" alt="" />
+            <h3>fresh meat</h3>
+            <div class="price">&#8377;499/- -- 999/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="product-4.png" alt="" />
+            <h3>fresh cabbage</h3>
+            <div class="price">&#8377;499/- -- 999/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+
+            <a href="#" class="btn">add to cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="product-5.png" alt="" />
+            <h3>fresh potato</h3>
+            <div class="price">&#8377;499/- -- 999/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="product-6.png" alt="" />
+            <h3>fresh avocado</h3>
+            <div class="price">&#8377;499/- -- 999/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="product-7.png" alt="" />
+            <h3>fresh carrot</h3>
+            <div class="price">&#8377;499/- -- 999/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+
+            <a href="#" class="btn">add to cart</a>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="product-8.png" alt="" />
+            <h3>green lemon</h3>
+            <div class="price">&#8377;499/- -- 999/-</div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+
+            <a href="#" class="btn">add to cart</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- products section Ends-->
+
+    <!-- categories section starts-->
+
+    <section class="categories" id="categories">
+      <h1 class="heading">product <span>categories</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="cat-1.png" alt="" />
+          <h3>vegetables</h3>
+          <p>upto 45% off</p>
+          <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+          <img src="cat-2.png" alt="" />
+          <h3>fresh fruits</h3>
+          <p>upto 45% off</p>
+          <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+          <img src="cat-3.png" alt="" />
+          <h3>dairy products</h3>
+          <p>upto 45% off</p>
+          <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+          <img src="cat-4.png" alt="" />
+          <h3>fresh meat</h3>
+          <p>upto 45% off</p>
+          <a href="#" class="btn">shop now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- categories section Ends-->
+
+    <!--review section starts-->
+
+    <section class="review" id="review">
+      <h1 class="heading">Team <span> Member </span></h1>
+      <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="profile.jpg" alt="" />
+            <p>
+              A third-year Computer Engineering student at Pacific School of Engineering, GTU, Patel Shivani leads the team with strong problem-solving and leadership skills.
+            </p>
+            <h3>Patel Shivani </h3>
+            <div class="stars">
+              
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="profile.jpg" alt="" />
+            <p>
+              As a third-year Computer Engineering student at Pacific School of Engineering, GTU, Patel Harshita contributes valuable insights and technical expertise, working alongside the team to achieve creative solutions in the tech field.
+            </p>
+            <h3>Patel Harshita</h3>
+            <div class="stars">
+             
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="profile.jpg" alt="" />
+            <p>
+              A third-year Computer Engineering student at Pacific School of Engineering, GTU, Patel Dev applies critical thinking and technical knowledge to contribute to the team’s projects, focusing on innovation and learning within the tech industry.
+            </p>
+            <h3>Patel Dev</h3>
+            <div class="stars">
+             
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="profile.jpg" alt="" />
+            <p>
+              Mangukiya Hardik, a third-year Computer Engineering student at Pacific School of Engineering, GTU, actively participates in the team’s efforts, contributing his technical skills and collaborating with peers to implement cutting-edge solutions in technology.
+            </p>
+            <h3>Mangukiya Hardik</h3>
+            <div class="stars">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--review section Ends-->
+
+    <!--blogs section starts-->
+    <section class="blogs" id="blogs">
+      <h1 class="heading">our <span> blogs </span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="g1.jpg" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fas fa-user"></i>by user</a>
+              <a href="#"><i class="fas fa-calander"></i>1st jan, 2025</a>
+            </div>
+            <h3>"Why Grocer Go is the Future of Grocery Shopping"</h3>
+            <p>
+              Grocer Go is revolutionizing the way rural and hostel residents shop for groceries. With a focus on fresh, organic produce and free delivery, we’re here to make your life easier. Say goodbye to long trips to the market and hello to convenient, doorstep delivery!
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="blog-2.jpg" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fas fa-user"></i>by user</a>
+              <a href="#"><i class="fas fa-calander"></i>31st dec, 2024</a>
+            </div>
+            <h3>"Freshness Delivered: The Grocer Go Promise"</h3>
+            <p>
+              At Grocer Go, we believe everyone deserves access to fresh, high-quality groceries. Our platform ensures organic produce and essentials are just a click away, with free delivery and simple payment options tailored for rural and hostel communities.
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="blog-3.jpg" alt="" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fas fa-user"></i>by user</a>
+              <a href="#"><i class="fas fa-calander"></i>15st dec, 2024</a>
+            </div>
+            <h3>"Healthy Living Starts with Grocer Go"</h3>
+            <p>
+              With Grocer Go, you can enjoy farm-fresh groceries delivered to your doorstep at no extra cost. We’re dedicated to supporting healthier lifestyles for rural areas and hostel residents by providing easy access to organic, nutritious food without the hassle.
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--blogs section Ends-->
+
+    <!--footer section starts-->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Grocer go <i class="fas fa-shopping-basket"></i></h3>
+          <p>
+            Grocer Go is your trusted partner for fresh, organic groceries, designed specifically for rural and hostel communities where popular delivery platforms are unavailable. 
+          </p>
+          <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+          </div>
+        </div>
+
+        
+          <a href="#" class="links"
+            ><i class="fas fa-map-marker-alt"></i> surat,india</a
+          >
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#" class="links"><i class="fas fa-arrow-right"></i> home</a>
+          <a href="#" class="links"
+            ><i class="fas fa-arrow-right"></i> features</a
+          >
+          <a href="#" class="links"
+            ><i class="fas fa-arrow-right"></i> products</a
+          >
+          <a href="#" class="links"
+            ><i class="fas fa-arrow-right"></i> categories</a
+          >
+          <a href="#" class="links"
+            ><i class="fas fa-arrow-right"></i> review</a
+          >
+          <a href="#" class="links"><i class="fas fa-arrow-right"></i> blogs</a>
+        </div>
+
+        <div class="box">
+          <h3>newsletter</h3>
+          <p>subscribe for latest updates</p>
+          <input type="email" placeholder="your email" class="email" />
+          <input type="submit" value="subscribe" class="btn" />
+          <img src="payment.png" class="payment-img" alt="" />
+        </div>
+      </div>
+
+     
+
+    <!--footer section Ends-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!--custom js file link-->
+    <script src="script.js"></script>
+  </body>
+</html>
